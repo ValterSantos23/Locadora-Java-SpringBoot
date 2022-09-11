@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="ISO-8859-1">
+<title>LocadoraApp</title>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet" />
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet"
+	href="materialize/css/materialize.min.css" media="screen,projection" />
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+	<h1>Cadastro de Filmes</h1>
+	<h3><a href="/filmes" class="waves-effect waves-light btn"><i class="material-icons left">list</i>Listar Filmes</a></h3>
+	<form class="container" method="post">
+		Nome: <input type="text" value="" name="nome"/>
+		<div class="row">
+			<div class="input-field col s6">
+				Quantidade: <input type="text" value="" name="quantidade"/>
+			</div>
+			
+			<div class="input-field col s6">
+				Categoria: <input type="text" value="" name="categoria"/>
+			</div>
+			
+			<div class="input-field col s3">
+				Duracao: <input type="text" value="" name="duracao"/>
+			</div>
+			
+			<div class="input-field col s3">
+				Lancamento: <input type="date" value="" name="lancamento"/>
+			</div>
+		
+		</div>
+		<button class="waves-effect waves-light btn" type="submit">Salvar Filme</button>
+	</form>
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>
